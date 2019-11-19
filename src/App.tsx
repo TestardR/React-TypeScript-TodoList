@@ -29,7 +29,6 @@ const App: React.FC = () => {
   };
 
   const removeTodo = (index: number): void => {
-    console.log(index);
     const newTodos: ITodo[] = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
